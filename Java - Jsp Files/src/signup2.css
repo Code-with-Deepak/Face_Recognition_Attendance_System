@@ -1,0 +1,130 @@
+/*---------------signup-----------*/
+
+
+.signup-h{
+    flex-basis: 10%;
+}
+.signup-container1{
+    flex-basis: 10%;
+    margin-bottom:10px;
+}
+.signup-box{
+  width: 80%;
+ justify-content: center;
+  text-align: center;
+  flex-basis: 80%;
+  margin-top: 45px;
+  position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+}
+.signup-content input{
+    width: 50%;
+    height: 20px;
+    border: none;
+    padding: 5px 10px;
+    margin: 8px 20px;
+    border: 1px solid grey;
+    
+}
+.signup-content select{
+  width: 55%;
+  height: 30px;
+  border: none;
+  padding: 5px 10px;
+  margin: 8px 20px;
+  border: 1px solid grey;
+  
+}
+.signup-column h2{
+    text-align: center;
+    margin: 5px;
+}
+.signup-column{
+    margin: 100px 50px;
+    display: flex;
+    flex-direction: column;
+        padding: 15px;
+        border: 1px solid rgb(221, 221, 221);
+         background: rgb(235, 235, 235);
+         border-radius: 10px;
+         height: 450px;
+         width: 550px;
+         position: absolute;
+         top: 40%;
+         left: 45%;
+         transform: translate(-50%, -50%);
+}
+.signup-button input{
+    width: 50%;
+    height: 20px;
+
+    margin: 8px 20px ;
+    padding: 5px 10px;
+    border: 1px solid #00854A;
+    color: white;
+    background: #00854A;
+    box-sizing: content-box;
+}
+.signup-button input:hover{
+        cursor: pointer;
+    box-shadow: 0px 0px 5px 3px grey;
+}
+.steps{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+.circle1{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    background: #00854A;
+    color: white;
+    text-align: center;
+    font: 14px Arial, sans-serif;
+    position: relative;
+  }
+  .circle2{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    background: #00854A;
+    color: white;
+    border: 1px solid  grey;
+    text-align: center;
+    font: 14px Arial, sans-serif;
+    position: relative;
+  }
+  .circle3{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    background: white;
+    color:  #00854A;
+    border: 1px solid  grey;
+    text-align: center;
+    font: 14px Arial, sans-serif;
+    position: relative;
+  }
+  .hr-line1 {
+    width: 10%;
+    position: relative;
+    margin: 18px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom: 2px solid #00854A;
+  }
+  .hr-line2 {
+    width: 10%;
+    position: relative;
+    margin: 18px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom: 1px solid grey;
+  }

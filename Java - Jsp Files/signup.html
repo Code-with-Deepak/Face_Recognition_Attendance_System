@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E - BusPass Attendance Monitoring System - SignUp</title>
+    <link rel="stylesheet" href="./src/index-signup.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="home">
+        <nav>
+            <a href="index.jsp"><img src="./src/logo.png" ></a>
+            <div class="nav-links" id="nav-links">
+            
+                <ul>
+                    <li><a href="index.jsp">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="signup-column">
+            
+               <div class="signup-h">
+                <h2>Sign Up</h2>
+               </div>
+
+               <div class="signup-container">
+                <div class="steps">
+                    <p class="circle1">1</p>
+                    <div class="hr-line"></div>
+                    <p class="circle2">2</p>
+                    <div class="hr-line"></div>
+                    <p class="circle3">3</p>
+                   </div>
+               </div>
+               <div class="signup-container1">
+                <div class="steps1">
+                <pre >Personal            College             Address</pre>
+               </div>
+                </div>
+               
+                <div class="signup-box">
+                    
+                    <form action="signup2.jsp" name="frm" onsubmit="return vali()" method="post">
+                        <div class="signup-content">
+                            <input type="text" name="fname" id="fname" placeholder="Name">
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <input type="password" name="password" id="passowrd" placeholder="Password" required>
+                            <input type="password" name="confirm-password" id="confirm-passowrd" placeholder="Confirm password" required>
+                        </div>
+                        <div class="signup-button">
+                            <input type="submit" value="Next">
+                        </div>   
+                    </form>
+                   
+                
+                 </div>
+        
+         </div>
+            
+    
+    </section>
+    
+     <script>
+         function vali(){
+             var cpass = document.forms["frm"]["confirm-password"].value;
+             var pass = document.forms["frm"]["password"].value;
+             if(pass == cpass)
+             return true;
+             else{
+                 alert("Password And Confirm Password Does Not Match !");
+                 return false;
+             }
+             
+         }
+     </script>
+</body>
+</html>

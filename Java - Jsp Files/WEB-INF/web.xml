@@ -1,0 +1,19 @@
+<web-app>
+ <servlet>
+  <servlet-name>UploadPhoto</servlet-name>
+  <servlet-class>UploadPhoto</servlet-class>
+<multipart-config>
+    <location>D:/projexts</location>
+    <max-file-size>20848820</max-file-size>
+    <max-request-size>418018841</max-request-size>
+    <file-size-threshold>10485760</file-size-threshold>
+</multipart-config>
+  </servlet>
+
+  <servlet-mapping>
+  <servlet-name>UploadPhoto</servlet-name>
+  <url-pattern>/UploadPhoto</url-pattern>
+<http-method>POST</http-method>
+  </servlet-mapping>
+</web-app>
+
